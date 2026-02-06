@@ -50,8 +50,11 @@ def multiply(num1, num2):
 
 #function for division
 def divide(num1, num2):
-    answer = round(num1 / num2, num_round)
-    solution = name + ", the quotient of " + str(num1) + " divided by " + str(num2) + " is " + str(answer) + "."
+    if num2 == 0:
+        solution = name + ", the quotient of " + str(num1) + " divided by " + str(num2) + " is undefined!"
+    else:
+        answer = round(num1 / num2, num_round)
+        solution = name + ", the quotient of " + str(num1) + " divided by " + str(num2) + " is " + str(answer) + "."
     return solution
 
 #function for exponents
