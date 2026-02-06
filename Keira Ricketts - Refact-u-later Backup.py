@@ -41,7 +41,7 @@ def add(num1, num2):
 #function for subtraction
 def subtract(num1, num2):
     answer = round(num1 - num2, num_round)
-    solution = name + ", the sum of " + str(num1) + " minus " + str(num2) + " is " + str(answer) + "."
+    solution = name + ", the difference of " + str(num1) + " minus " + str(num2) + " is " + str(answer) + "."
     return solution
 
 #function for multiplication
@@ -64,6 +64,18 @@ def exponent(num1, num2):
     answer = round(num1 ** num2, num_round)
     solution = name + ", " + str(num1) + " to the power of " + str(num2) + " is " + str(answer) + "."
     return solution
+
+def root(num1, num2):
+    answer = round(num1 ** (1/num2), num_round)
+    if num2 == 2:
+        solution = name + ", the square root of " + str(num1) + " is " + str(answer) + "."
+        print(solution)
+    if num2 == 3:
+        solution = name + ", the cube root of " + str(num1) + " is " + str(answer) + "."
+        print(solution)
+    else:
+        solution = name + ", " + str(num2) + "th root of " + str(num1) + " is " + str(answer) + "."
+        print(solution)
 
 #asks user for name and operation
 name = input("Hi! What's your name?: ")
@@ -101,11 +113,11 @@ while True:
             continue
 
         #asks what operation
-        print("Operations: add(1), subtract(2), multiply(3), divide(4), or exponent(5)")
+        print("Operations: add(1), subtract(2), multiply(3), divide(4), exponent(5), or root(6)")
         operation = input("Enter operation #: ")
         
         #follows through with the operation
-        if operation == "1" or operation == "2" or operation == "3" or operation == "4" or operation == "5":
+        if operation == "1" or operation == "2" or operation == "3" or operation == "4" or operation == "5" or operation == "6":
             try:
                 num1 = float(input("Enter 1st number: "))
                 num2 = float(input("Enter 2nd number: "))
@@ -191,6 +203,14 @@ while True:
                     print(six_seven)
                     print("")
                 solution = exponent(num1, num2)
+                print(solution)
+
+            #operates roots
+            elif operation == "6":
+                if num1 == 6 and num2 == 7 or num1 == 7 and num2 == 6:
+                    print(six_seven)
+                    print("")
+                solution = root(num1, num2)
                 print(solution)
             
             #asks user if they want to use calculator again

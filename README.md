@@ -12,3 +12,5 @@ It was also really easy to get rid of the 'magic word'. I just deleted the if st
 >:)
 
 Added six seven jokes to ALL functions hehe
+
+Fixed a typo where it printed 'sum' instead of 'difference' in the subtraction function. I also now added the root function! However, when i first ran it, it gave me the incorrect value! Eventually I realized I forgot to put parentheses around 1/num2, which confused the function. 
