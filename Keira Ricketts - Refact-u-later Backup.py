@@ -15,6 +15,8 @@ operation = ""
 second_operation = ""
 again = ""
 
+six_seven = "hehehe six sevennnnnnnn"
+
 #program logic
 print("Keira's Four Functions Calculator")
 print("")
@@ -145,6 +147,11 @@ while True:
                         print("8 + 8 = Butterfl- wait, its actually 16. Oopsies, my bad.")
                         print("Well, you reached the end of the jokes.")
                         print("Have fun doing actual math, " + name + "!")
+                    elif num1 == 6 and num2 == 7 or num1 == 7 and num2 == 6:
+                        solution = add(num1, num2)
+                        print(six_seven)
+                        print("")
+                        print("Anyway, " + solution)
                     else:
                         solution = add(num1, num2)
                         print(solution)
@@ -156,21 +163,33 @@ while True:
             
             #performs subtraction
             elif operation == "2":
+                if num1 == 6 and num2 == 7 or num1 == 7 and num2 == 6:
+                    print(six_seven)
+                    print("")
                 solution = subtract(num1, num2)
                 print(solution)
             
             #performs multiplication
             elif operation == "3":
+                if num1 == 6 and num2 == 7 or num1 == 7 and num2 == 6:
+                    print(six_seven)
+                    print("")
                 solution = multiply(num1, num2)
                 print(solution)
                         
             #performs division
             elif operation == "4":
+                if num1 == 6 and num2 == 7 or num1 == 7 and num2 == 6:
+                    print(six_seven)
+                    print("")
                 solution = divide(num1, num2)
                 print(solution)
 
             #operates exponents
             elif operation == "5":
+                if num1 == 6 and num2 == 7 or num1 == 7 and num2 == 6:
+                    print(six_seven)
+                    print("")
                 solution = exponent(num1, num2)
                 print(solution)
             

@@ -10,3 +10,5 @@ It was quite easy to add the error handling when the num2 for division was 0! Al
 
 It was also really easy to get rid of the 'magic word'. I just deleted the if statements that performed that function, but now, I am going to add 6-7 jokes 
 >:)
+
+Added six seven jokes to ALL functions hehe
