@@ -182,32 +182,6 @@ while True:
                 print("Thanks for using my four functions calculator, " + name + "!")
                 print("Have a great day! :)") 
                 break
-            
-            #makes user say the magic word
-            elif second_operation == "yes":
-                print("Whats the magic word?")
-                magic_word = input("Magic word: ")
-                if magic_word == "please" or magic_word == "Please":
-                    print("Great job, " + name + "!")
-                    print("Studies show using manners actually increases your confidence!")
-                else:
-                    print("That's not the magic word...")
-                    print("Try again!")
-                    magic_word = input(name + ", what's the magic word? It starts with a p: ")
-                    if magic_word == "please" or magic_word == "Please":
-                        print("Great job, " + name + "!")
-                    else: 
-                        print("")
-                        print("The magic word was please.")
-                        print("Remember it, because I may ask again!")
-            elif second_operation == "yes please" or second_operation == "Yes please" or second_operation == "Yes, please" or second_operation == "yes, please":
-                print("Someone's been to cotillion! Nice manners, " + name + "!")
-            else:
-                print("Sorry, I couldn't quite catch that.")
-                print("")
-                if try_again() == "no":
-                    break
-            
                 
         #breaks loop and allows user to try again
         else:

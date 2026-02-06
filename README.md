@@ -7,3 +7,6 @@ Next, I am going to add another function for squareroots! Only one number will n
 Finally, I'm going to get rid of the 'whats the magic word?' bc its kind of annoying
 
 It was quite easy to add the error handling when the num2 for division was 0! All i did was use an if an if statement and printed to the user that the answer was undefined. 
+
+It was also really easy to get rid of the 'magic word'. I just deleted the if statements that performed that function, but now, I am going to add 6-7 jokes 
+>:)
